@@ -17,15 +17,38 @@
     --radius-sm: 8px;
 }
 
+/* 黑暗模式 */
+[data-theme="dark"] {
+    --primary: #818cf8;
+    --primary-light: #a5b4fc;
+    --primary-dark: #6366f1;
+    --secondary: #fbbf24;
+    --bg-light: #1e293b;
+    --bg-white: #0f172a;
+    --text-dark: #f8fafc;
+    --text-gray: #cbd5e1;
+    --text-light: #64748b;
+    --border: #334155;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+    --gradient: linear-gradient(135deg, #4c1d95 0%, #5b21b6 50%, #7c3aed 100%);
+}
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
-    font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Noto Sans SC', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     background: var(--bg-light);
     color: var(--text-dark);
     line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+/* 英文字体 */
+[data-lang="en"] body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
 
 /* ===== 导航栏 ===== */
 .navbar {

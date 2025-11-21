@@ -176,8 +176,11 @@ function bindCardEvents() {
         btn.addEventListener('click', function() {
             const viewBtn = this.closest('.card').querySelector('.btn-view');
             navigator.clipboard.writeText(viewBtn.dataset.prompt).then(() => {
-                this.textContent = '✓ 已复制';
-                setTimeout(() => this.textContent = '📄 原文', 2000);
+                const currentLang = localStorage.getItem('language') || 'zh';
+                this.textContent = currentLang === 'en' ? '✓ Copied' : '✓ 已复制';
+                setTimeout(() => {
+                    this.textContent = currentLang === 'en' ? '📄 Original' : '📄 原文';
+                }, 2000);
             });
         });
     });
@@ -225,9 +228,14 @@ function closeModal() {
 copyPrompt?.addEventListener('click', async () => {
     try {
         await navigator.clipboard.writeText(modalPrompt.textContent);
-        copyPrompt.textContent = '✓ 已复制';
-        setTimeout(() => copyPrompt.textContent = '📋 复制提示词', 2000);
-    } catch (err) { alert('复制失败'); }
+        const currentLang = localStorage.getItem('language') || 'zh';
+        copyPrompt.textContent = currentLang === 'en' ? '✓ Copied' : '✓ 已复制';
+        setTimeout(() => {
+            copyPrompt.textContent = currentLang === 'en' ? '📋 Copy Prompt' : '📋 复制提示词';
+        }, 2000);
+    } catch (err) {
+        alert(currentLang === 'en' ? 'Copy failed' : '复制失败');
+    }
 });
 
 // 平滑滚动
@@ -254,4 +262,87 @@ window.addEventListener('scroll', () => {
     });
 });
 
-console.log(`🍌 Awesome Nano Bananapro Images 已加载 ${casesData.length} 个案例!`);
+// 语言和主题管理
+class LanguageThemeManager {
+    constructor() {
+        this.currentLang = localStorage.getItem('language') || 'zh';
+        this.currentTheme = localStorage.getItem('theme') || 'light';
+        this.init();
+    }
+
+    init() {
+        this.setLanguage(this.currentLang);
+        this.setTheme(this.currentTheme);
+        this.bindEvents();
+    }
+
+    setLanguage(lang) {
+        this.currentLang = lang;
+        document.documentElement.lang = lang === 'en' ? 'en-US' : 'zh-CN';
+        document.documentElement.setAttribute('data-lang', lang);
+
+        // 更新按钮文本
+        const langBtn = document.getElementById('langBtn');
+        if (langBtn) {
+            langBtn.textContent = lang === 'en' ? 'English ▼' : '中文 ▼';
+        }
+
+        // 更新所有带有 data-zh 和 data-en 的元素
+        document.querySelectorAll('[data-zh][data-en]').forEach(element => {
+            element.textContent = element.getAttribute(`data-${lang}`);
+        });
+
+        // 更新 placeholder
+        document.querySelectorAll('[data-zh-placeholder][data-en-placeholder]').forEach(element => {
+            element.placeholder = element.getAttribute(`data-${lang}-placeholder`);
+        });
+
+        // 更新 option 文本
+        document.querySelectorAll('option[data-zh][data-en]').forEach(option => {
+            option.textContent = option.getAttribute(`data-${lang}`);
+        });
+
+        localStorage.setItem('language', lang);
+    }
+
+    setTheme(theme) {
+        this.currentTheme = theme;
+        document.documentElement.setAttribute('data-theme', theme);
+
+        // 更新主题按钮
+        const themeToggle = document.getElementById('themeToggle');
+        if (themeToggle) {
+            themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+        }
+
+        localStorage.setItem('theme', theme);
+    }
+
+    bindEvents() {
+        // 主题切换
+        const themeToggle = document.getElementById('themeToggle');
+        if (themeToggle) {
+            themeToggle.addEventListener('click', () => {
+                this.setTheme(this.currentTheme === 'light' ? 'dark' : 'light');
+            });
+        }
+
+        // 语言切换
+        const langMenuItems = document.querySelectorAll('#langMenu li[data-lang]');
+        langMenuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const lang = item.getAttribute('data-lang');
+                this.setLanguage(lang);
+
+                // 更新选中状态
+                langMenuItems.forEach(li => li.textContent = li.textContent.replace('✓ ', ''));
+                item.textContent = '✓ ' + item.textContent;
+            });
+        });
+    }
+}
+
+// 初始化语言和主题管理器
+const langThemeManager = new LanguageThemeManager();
+
+console.log(`🍌 Awesome Nano Banana Pro Images 已加载 ${casesData.length} 个案例!`);

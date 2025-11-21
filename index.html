@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nano Bananapro (Gemini 3 Pro Image) 全网最全提示词整理">
-    <title>Awesome Nano Bananapro Images ✨</title>
+    <meta name="description" content="Nano Banana Pro (Gemini 3 Pro Image) - The most comprehensive prompt collection">
+    <title data-zh="Awesome Nano Banana Pro Images ✨" data-en="Awesome Nano Banana Pro Images ✨">Awesome Nano Banana Pro Images ✨</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍌</text></svg>" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- 导航栏 -->
@@ -15,13 +15,13 @@
         <div class="nav-container">
             <div class="nav-brand">
                 <span class="brand-icon">🍌</span>
-                <span class="brand-text">Nano Bananapro</span>
+                <span class="brand-text" data-zh="Nano Banana Pro" data-en="Nano Banana Pro">Nano Banana Pro</span>
             </div>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#hero" class="active">首页</a></li>
-                <li><a href="#showcase">案例展示</a></li>
-                <li><a href="#about">关于</a></li>
-                <li><a href="#channels">使用渠道</a></li>
+                <li><a href="#hero" class="active" data-zh="首页" data-en="Home">首页</a></li>
+                <li><a href="#showcase" data-zh="案例展示" data-en="Showcase">案例展示</a></li>
+                <li><a href="#about" data-zh="关于" data-en="About">关于</a></li>
+                <li><a href="#channels" data-zh="使用渠道" data-en="Channels">使用渠道</a></li>
             </ul>
             <div class="nav-actions">
                 <button class="theme-toggle" id="themeToggle">🌙</button>
@@ -30,8 +30,6 @@
                     <ul class="lang-menu" id="langMenu">
                         <li data-lang="zh">✓ 中文</li>
                         <li data-lang="en">English</li>
-                        <li data-lang="ja">日本語</li>
-                        <li data-lang="ko">한국어</li>
                     </ul>
                 </div>
             </div>
@@ -43,17 +41,17 @@
     <section id="hero" class="hero">
         <div class="hero-bg"></div>
         <div class="container">
-            <h1 class="hero-title">🍌 Awesome Nano Bananapro Images ✨</h1>
-            <p class="hero-subtitle">精选的Gemini3图像生成案例合集</p>
-            <p class="hero-desc">借助Google的Gemini3模型，展示AI图像生成与编辑的无限能力，为您的创意创作提供灵感！</p>
+            <h1 class="hero-title">🍌 Awesome Nano Banana Pro Images ✨</h1>
+            <p class="hero-subtitle" data-zh="精选的Gemini3图像生成案例合集" data-en="Curated collection of Gemini3 image generation examples">精选的Gemini3图像生成案例合集</p>
+            <p class="hero-desc" data-zh="借助Google的Gemini3模型，展示AI图像生成与编辑的无限能力，为您的创意创作提供灵感！" data-en="Showcasing the infinite capabilities of AI image generation and editing with Google's Gemini3 model, providing inspiration for your creative work!">借助Google的Gemini3模型，展示AI图像生成与编辑的无限能力，为您的创意创作提供灵感！</p>
             <div class="hero-stats">
-                <div class="stat"><span class="stat-num">100</span><span class="stat-label">精选案例</span></div>
-                <div class="stat"><span class="stat-num">2</span><span class="stat-label">AI模型对比</span></div>
-                <div class="stat"><span class="stat-num">10+</span><span class="stat-label">贡献者</span></div>
+                <div class="stat"><span class="stat-num">100</span><span class="stat-label" data-zh="精选案例" data-en="Curated Cases">精选案例</span></div>
+                <div class="stat"><span class="stat-num">2</span><span class="stat-label" data-zh="AI模型对比" data-en="AI Models">AI模型对比</span></div>
+                <div class="stat"><span class="stat-num">10+</span><span class="stat-label" data-zh="贡献者" data-en="Contributors">贡献者</span></div>
             </div>
             <div class="hero-btns">
-                <a href="#showcase" class="btn btn-primary">🖼️ 浏览案例</a>
-                <a href="https://github.com/xianyu110/awesome-nanobananapro-prompts" target="_blank" class="btn btn-secondary">📦 GitHub仓库</a>
+                <a href="#showcase" class="btn btn-primary" data-zh="🖼️ 浏览案例" data-en="🖼️ Browse Cases">🖼️ 浏览案例</a>
+                <a href="https://github.com/xianyu110/awesome-nanobananapro-prompts" target="_blank" class="btn btn-secondary" data-zh="📦 GitHub仓库" data-en="📦 GitHub Repo">📦 GitHub仓库</a>
             </div>
         </div>
     </section>
@@ -63,32 +61,32 @@
         <div class="container">
             <div class="filter-bar">
                 <div class="filter-item">
-                    <label>分类：</label>
+                    <label data-zh="分类：" data-en="Category:">分类：</label>
                     <select id="categoryFilter">
-                        <option value="all">全部案例</option>
-                        <option value="character">角色一致性</option>
-                        <option value="translation">翻译上色</option>
-                        <option value="poster">海报设计</option>
-                        <option value="game">游戏设计</option>
-                        <option value="ui">UI设计</option>
-                        <option value="product">产品渲染</option>
-                        <option value="ip">IP创作</option>
-                        <option value="traditional">古风创作</option>
-                        <option value="infographic">信息图表</option>
-                        <option value="style">风格转换</option>
-                        <option value="scene">场景编辑</option>
-                        <option value="design">视觉设计</option>
+                        <option value="all" data-zh="全部案例" data-en="All Cases">全部案例</option>
+                        <option value="character" data-zh="角色一致性" data-en="Character Consistency">角色一致性</option>
+                        <option value="translation" data-zh="翻译上色" data-en="Translation & Coloring">翻译上色</option>
+                        <option value="poster" data-zh="海报设计" data-en="Poster Design">海报设计</option>
+                        <option value="game" data-zh="游戏设计" data-en="Game Design">游戏设计</option>
+                        <option value="ui" data-zh="UI设计" data-en="UI Design">UI设计</option>
+                        <option value="product" data-zh="产品渲染" data-en="Product Rendering">产品渲染</option>
+                        <option value="ip" data-zh="IP创作" data-en="IP Creation">IP创作</option>
+                        <option value="traditional" data-zh="古风创作" data-en="Traditional Art">古风创作</option>
+                        <option value="infographic" data-zh="信息图表" data-en="Infographics">信息图表</option>
+                        <option value="style" data-zh="风格转换" data-en="Style Transfer">风格转换</option>
+                        <option value="scene" data-zh="场景编辑" data-en="Scene Editing">场景编辑</option>
+                        <option value="design" data-zh="视觉设计" data-en="Visual Design">视觉设计</option>
                     </select>
                 </div>
                 <div class="filter-item">
-                    <label>排序：</label>
+                    <label data-zh="排序：" data-en="Sort:">排序：</label>
                     <select id="sortFilter">
-                        <option value="latest">最新优先</option>
-                        <option value="popular">最热门</option>
+                        <option value="latest" data-zh="最新优先" data-en="Latest First">最新优先</option>
+                        <option value="popular" data-zh="最热门" data-en="Most Popular">最热门</option>
                     </select>
                 </div>
                 <div class="search-box">
-                    <input type="text" id="searchInput" placeholder="搜索案例...">
+                    <input type="text" id="searchInput" data-zh-placeholder="搜索案例..." data-en-placeholder="Search cases..." placeholder="搜索案例...">
                     <button class="search-btn">🔍</button>
                 </div>
             </div>
@@ -98,7 +96,7 @@
             </div>
 
             <div class="load-more">
-                <button class="btn btn-load-more" id="loadMoreBtn">加载更多案例</button>
+                <button class="btn btn-load-more" id="loadMoreBtn" data-zh="加载更多案例" data-en="Load More Cases">加载更多案例</button>
             </div>
         </div>
     </section>
@@ -106,27 +104,27 @@
     <!-- 关于 -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">关于 Nano Bananapro</h2>
+            <h2 class="section-title" data-zh="关于 Nano Banana Pro" data-en="About Nano Banana Pro">关于 Nano Banana Pro</h2>
             <div class="about-grid">
                 <div class="about-card">
                     <div class="about-icon">🎨</div>
-                    <h3>什么是 Nano Banana Pro？</h3>
-                    <p>Google 最新发布的图像生成模型，支持 4K 分辨率、多轮编辑、多图合成等强大功能。</p>
+                    <h3 data-zh="什么是 Nano Banana Pro？" data-en="What is Nano Banana Pro?">什么是 Nano Banana Pro？</h3>
+                    <p data-zh="Google 最新发布的图像生成模型，支持 4K 分辨率、多轮编辑、多图合成等强大功能。" data-en="Google's latest image generation model, supporting powerful features like 4K resolution, multi-round editing, and multi-image synthesis.">Google 最新发布的图像生成模型，支持 4K 分辨率、多轮编辑、多图合成等强大功能。</p>
                 </div>
                 <div class="about-card">
                     <div class="about-icon">✨</div>
-                    <h3>核心特性</h3>
+                    <h3 data-zh="核心特性" data-en="Core Features">核心特性</h3>
                     <ul>
-                        <li>最高 4K 分辨率输出</li>
-                        <li>支持 14 张图像合成</li>
-                        <li>角色外貌一致性保持</li>
-                        <li>集成 Google 搜索增强</li>
+                        <li data-zh="最高 4K 分辨率输出" data-en="Up to 4K resolution output">最高 4K 分辨率输出</li>
+                        <li data-zh="支持 14 张图像合成" data-en="Supports 14-image synthesis">支持 14 张图像合成</li>
+                        <li data-zh="角色外貌一致性保持" data-en="Character appearance consistency">角色外貌一致性保持</li>
+                        <li data-zh="集成 Google 搜索增强" data-en="Integrated Google search enhancement">集成 Google 搜索增强</li>
                     </ul>
                 </div>
                 <div class="about-card">
                     <div class="about-icon">🚀</div>
-                    <h3>如何使用？</h3>
-                    <p>访问 Gemini App、AI Studio 或使用本项目整理的国内镜像站点即可开始创作。</p>
+                    <h3 data-zh="如何使用？" data-en="How to Use?">如何使用？</h3>
+                    <p data-zh="访问 Gemini App、AI Studio 或使用本项目整理的国内镜像站点即可开始创作。" data-en="Visit Gemini App, AI Studio, or use the domestic mirror sites organized in this project to start creating.">访问 Gemini App、AI Studio 或使用本项目整理的国内镜像站点即可开始创作。</p>
                 </div>
             </div>
         </div>
@@ -135,10 +133,10 @@
     <!-- 使用渠道 -->
     <section id="channels" class="channels">
         <div class="container">
-            <h2 class="section-title">使用渠道</h2>
+            <h2 class="section-title" data-zh="使用渠道" data-en="Access Channels">使用渠道</h2>
             <div class="channels-grid">
                 <div class="channel-card">
-                    <h3>🌐 国内使用渠道</h3>
+                    <h3 data-zh="🌐 国内使用渠道" data-en="🌐 Domestic Access">🌐 国内使用渠道</h3>
                     <ul>
                         <li><a href="https://maynorai.top/list/#/home" target="_blank">maynorai.top</a></li>
                         <li><a href="https://draw.claude-opus.top/list/#/home" target="_blank">draw.claude-opus.top</a></li>
@@ -146,16 +144,16 @@
                     </ul>
                 </div>
                 <div class="channel-card">
-                    <h3>🔗 中转API</h3>
+                    <h3 data-zh="🔗 中转API" data-en="🔗 Proxy API">🔗 中转API</h3>
                     <ul>
                         <li><a href="https://apipro.maynor1024.live/" target="_blank">apipro.maynor1024.live</a></li>
                     </ul>
                 </div>
                 <div class="channel-card">
-                    <h3>🏢 官方平台</h3>
+                    <h3 data-zh="🏢 官方平台" data-en="🏢 Official Platforms">🏢 官方平台</h3>
                     <ul>
                         <li><a href="https://aistudio.google.com/apps" target="_blank">Google AI Studio</a></li>
-                        <li>Gemini App / 网页版</li>
+                        <li data-zh="Gemini App / 网页版" data-en="Gemini App / Web">Gemini App / 网页版</li>
                     </ul>
                 </div>
             </div>
@@ -165,8 +163,8 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Awesome Nano Bananapro Images. 基于 Google Gemini 3 Pro Image.</p>
-            <p>本站内容仅供学习交流使用。</p>
+            <p data-zh="&copy; 2025 Awesome Nano Banana Pro Images. 基于 Google Gemini 3 Pro Image." data-en="&copy; 2025 Awesome Nano Banana Pro Images. Based on Google Gemini 3 Pro Image.">&copy; 2025 Awesome Nano Banana Pro Images. 基于 Google Gemini 3 Pro Image.</p>
+            <p data-zh="本站内容仅供学习交流使用。" data-en="Content on this site is for educational and communication purposes only.">本站内容仅供学习交流使用。</p>
         </div>
     </footer>
 
@@ -181,7 +179,7 @@
             <div class="modal-info">
                 <h3 id="modalTitle"></h3>
                 <p id="modalPrompt"></p>
-                <button class="btn btn-copy-prompt" id="copyPrompt">📋 复制提示词</button>
+                <button class="btn btn-copy-prompt" id="copyPrompt" data-zh="📋 复制提示词" data-en="📋 Copy Prompt">📋 复制提示词</button>
             </div>
         </div>
     </div>
