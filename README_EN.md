@@ -762,9 +762,17 @@ https://draw.claude-opus.top/list/#/home
 
 https://nanobanana-free.top/
 
+https://pro.nanobanana-free.top/
+
 **Proxy API**:
 
 https://apipro.maynor1024.live/
+
+---
+
+### **VII. Related Projects**
+
+- **awesome-nano-banana**: The most comprehensive AI text-to-image prompt website [Visit Online](https://xianyu110.github.io/awesome-nano-banana/) - [GitHub Repository](https://github.com/xianyu110/awesome-nano-banana)
 
 ---
 

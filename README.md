@@ -9,6 +9,7 @@
 - [案例展示](#-案例展示)
 - [投稿指南](#-投稿指南)
 - [使用渠道](#-使用渠道)
+- [相关项目](#-相关项目)
 - [贡献者](#-贡献者)
 - [开源协议](#-开源协议)
 
@@ -559,6 +560,7 @@ Google 的 AI 攻势没有半点减弱的迹象。如果说前几天 Gemini 3 Pr
 | 🎯 maynorai.top | 稳定可靠的国内镜像 | [访问](https://maynorai.top/list/#/home) |
 | 🎨 draw.claude-opus.top | 高性能渲染服务 | [访问](https://draw.claude-opus.top/list/#/home) |
 | 🆓 nanobanana-free.top | 免费体验站点 | [访问](https://nanobanana-free.top/) |
+| ⚡ pro.nanobanana-free.top | 专业版体验站点 | [访问](https://pro.nanobanana-free.top/) |
 
 ### 中转API
 
@@ -568,6 +570,10 @@ Google 的 AI 攻势没有半点减弱的迹象。如果说前几天 Gemini 3 Pr
 
 - [Google AI Studio](https://aistudio.google.com/apps) - 官方开发平台
 - Gemini App / 网页版 - 官方应用
+
+### 相关项目
+
+- [awesome-nano-banana](https://github.com/xianyu110/awesome-nano-banana) - 全网最全AI文生图提示词网站 [在线访问](https://xianyu110.github.io/awesome-nano-banana/)
 
 ## 🤝 贡献者
 
