@@ -557,14 +557,11 @@ Google 的 AI 攻势没有半点减弱的迹象。如果说前几天 Gemini 3 Pr
 
 | 平台 | 描述 | 链接 |
 |-----|------|-----|
-| 🎯 maynorai.top | 稳定可靠的国内镜像 | [访问](https://maynorai.top/list/#/home) |
-| 🎨 draw.claude-opus.top | 高性能渲染服务 | [访问](https://draw.claude-opus.top/list/#/home) |
-| 🆓 nanobanana-free.top | 免费体验站点 | [访问](https://nanobanana-free.top/) |
-| ⚡ pro.nanobanana-free.top | 专业版体验站点 | [访问](https://pro.nanobanana-free.top/) |
+| 🎯 AI超级工具箱 | 稳定可靠的国内镜像 | [访问](http://ai-tools.safiindeed.club/) |
 
 ### 中转API
 
-- [apipro.maynor1024.live](https://apipro.maynor1024.live/) - 付费API服务
+- [api.uniai.top](https://api.uniai.top/) - 付费API服务
 
 ### 官方平台
 
